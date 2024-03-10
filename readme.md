@@ -131,11 +131,3 @@ En la carpeta `views`, edita el archivo `views.xml` para definir las vistas de l
 
 Una vez completados los pasos de configuración, puedes ejecutar el proyecto accediendo a la URL proporcionada por Odoo en tu navegador.
 
-## Nota
-
-Recuerda modificar los nombres de las tablas y los campos según los requisitos específicos de tu proyecto.
-
-¡Listo para comenzar a gestionar tu empresa con Odoo! 🚀
-``` 
-
-Simplemente copia todo este texto y pégalo en tu archivo README.md en GitHub.
