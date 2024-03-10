@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_testexamen_testexamen,testexamen.testexamen,model_pepito,base.group_user,1,1,1,1
+
+access_testexamen_testexamen2,testexamen.testexamen,model_pepita,base.group_user,1,1,1,1

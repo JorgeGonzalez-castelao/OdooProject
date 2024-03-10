@@ -1,0 +1,77 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+
+    <record model="ir.ui.view" id="testexamen.list">
+      <field name="name">testexamen list</field>
+      <field name="model">pepito</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="description"/>
+          <field name="edad"/>
+        </tree>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="testexamen.list2">
+      <field name="name">testexamen list</field>
+      <field name="model">pepita</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="description"/>
+          <field name="altura"/>
+        </tree>
+      </field>
+    </record>
+
+
+    <!-- actions opening views on models -->
+
+    <record model="ir.actions.act_window" id="testexamen.action_window">
+      <field name="name">testexamen window</field>
+      <field name="res_model">pepito</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+     <record model="ir.actions.act_window" id="testexamen.action_window2">
+      <field name="name">testexamen window</field>
+      <field name="res_model">pepita</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="testexamen.action_server">
+      <field name="name">testexamen server</field>
+      <field name="model_id" ref="model_testexamen_testexamen"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+
+    <menuitem name="testexamen" id="testexamen.menu_root"/>
+
+    <!-- menu categories -->
+
+    <menuitem name="general" id="testexamen.menu_1" parent="testexamen.menu_root"/>
+    <menuitem name="pepita" id="testexamen.menu_2" parent="testexamen.menu_root" action="testexamen.action_window2"/>
+
+    <!-- actions -->
+
+    <menuitem name="List" id="testexamen.menu_1_list" parent="testexamen.menu_1"
+              action="testexamen.action_window"/>
+    <menuitem name="Server to list" id="testexamen" parent="testexamen.menu_1"
+              action="testexamen.action_window2"/>
+
+  </data>
+</odoo>

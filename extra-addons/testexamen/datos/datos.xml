@@ -1,0 +1,14 @@
+<odoo>
+    <data>
+        <record model="pepito" id="testexamen.nombres">
+            <field name="name">Pepe</field> <!--El nombre debe ser el mismo que la variable del modelo-->
+            <field name="edad">18</field>
+            <field name="description">50</field> <!--El nombre debe ser el mismo que la variable del modelo-->
+        </record>
+        <record model="pepito" id="testexamen.nombres2">
+            <field name="name">Nico</field> <!--El nombre debe ser el mismo que la variable del modelo-->
+            <field name="edad">20</field>
+            <field name="description">si</field>
+        </record>
+    </data>
+</odoo>
